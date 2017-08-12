@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= error.status %> : <%= error.message %></title>
+</head>
+<body>
+<h1><%= error.status %></h1>
+<h2><%= error.message %></h2>
+<% if(env == 'development'){ %>
+  <pre><%= error.stack %></pre>
+<% } %>
+</body>
+</html>

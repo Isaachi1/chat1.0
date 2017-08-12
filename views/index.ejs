@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat do Wizzer</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/chat.js"></script>
+</head>
+<body>
+<div id="geral">
+  <section id="chat">
+    <section class="container">
+      <ul id="msgs"></ul>
+      <div id="dig"></div>
+      <section class="form">
+        <textarea id="txtMsgs" placeholder="Digite algo aqui..."></textarea>
+      </section>
+    </section>
+    <section id="log"></section>
+  </section>
+</div>
+<form id="formLogin" method="post">
+  <div class="inputs">
+    <h3>Faça seu Login</h3>
+    <hr>
+    <div id="erro"></div>
+    <input type="text" disabled name="nick" placeholder="Usuário" required>
+    <fieldset>
+      <legend>Gênero</legend>
+      <label>
+        <input type="radio" name="gender" value="m" checked>
+        <strong>Masculino</strong>
+      </label>
+      <label>
+        <input type="radio" name="gender" value="f">
+        <strong>Feminino</strong>
+      </label>
+    </fieldset>
+    <button type="submit" disabled>Entrar</button>
+  </div>
+</form>
+</body>
+</html>

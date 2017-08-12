@@ -1,0 +1,179 @@
+*
+  margin 0
+  padding 0
+  list-style none
+  text-decoration none
+  box-sizing border-box
+  outline none !important
+  vertical-align baseline
+
+html, body
+  width 100%
+  height 100%
+  font 15px Arial lighter, sans-serif
+
+#geral
+  position relative
+  min-height 100%
+
+#chat
+  display flex
+  position: relative
+  flex-direction row
+  width 800px
+  height 400px
+  top 100px
+  margin 0 auto
+  border 1px solid #dadada
+  padding 16px
+  border-radius 4px
+  font-size 13px
+  box-shadow 1px 1px 2px rgba(#000, .1)
+  .form
+    flex 0 auto
+
+.container
+  display flex
+  flex 1
+  flex-direction column
+  overflow hidden
+  overflow-y auto
+
+#log
+  flex 0 200px
+  padding 0 16px
+  overflow hidden
+  overflow-y auto
+  border 1px solid #dadada
+  border-left none
+  p
+    display flex
+    flex-direction row
+    align-items center
+    padding 4px
+    &+p
+      border-top 1px solid #dadada
+      margin-top 8px
+    span
+      size = 32px
+      flex 0 auto
+      background-size 100% 100%
+      background-position center
+      width size
+      height size
+    strong
+      flex 1
+      margin-top 5px
+      margin-left 8px
+    &.m
+      color #08d
+      span
+        background-image url("../images/users.png")
+    &.f
+      color #ff5a58
+      span
+        background-image url("../images/users-F.png")
+
+#msgs
+  flex 1
+  overflow hidden
+  overflow-y auto
+  margin-bottom 16px
+  border 1px solid #dadada
+  padding 0 16px
+  li
+    padding 8px 0
+    margin-bottom 7px
+    border-bottom 1px solid #dadada
+  .m
+    color #08d
+    span
+      background-image url("../images/users.png")
+  .f
+    color #ff5a58
+    span
+      background-image url("../images/users-F.png")
+
+#txtMsgs
+  width 100%
+  height 4rem
+  resize none
+  padding 12px
+  border 1px solid #dadada
+  background #fff
+
+#formLogin
+  display none
+  position fixed
+  top 0
+  left 0
+  width 100%
+  height 100%
+  z-index 9999
+  background rgba(#000, .82)
+  color #fff
+  align-items center
+  .inputs
+    position absolute
+    display block
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    background #fff
+    padding 15px
+    box-shadow 2px 5px 10px rgba(#000, .82)
+    border-radius 4px
+    h3
+      text-align center
+      color #242424
+      font 1.618rem 'Helvetica', sans-serif
+      font-weight bold
+    hr
+      width 75%
+      display block
+      margin: 8px auto 16px auto
+      border none
+      border-bottom  1px solid rgba(#000, .50)
+    fieldset
+      padding 8px
+      margin-bottom 8px
+      color #333333
+      label
+        cursor pointer
+        margin-right 10px
+        input
+          outline none !important
+          cursor pointer
+        strong
+          font-size 0.8rem
+    input[type="text"]
+      display block
+      padding 8px 0
+      border none
+      border-bottom 2px solid rgba(#000, .12)
+      color #000
+      background none
+      margin-bottom 16px
+      &:active, &:focus
+        border-color #ff5a58
+    button
+      display block
+      padding 12px 32px
+      width 100%
+      text-transform uppercase
+      border none
+      background #d4d4d4
+      color #333
+      cursor pointer
+      outline none
+      &:hover, &:focus
+        background #ff5a58
+        color #fff
+        transition all 500ms ease
+#erro
+  display none
+  color #fff
+  padding 8px
+  background #ff5a58
+  font-size .809em
+  margin-bottom 20px
